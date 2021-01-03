@@ -56,19 +56,29 @@ class HomePage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(
                         bottom: 9.0,
-                        ),
+                      ),
                       child: Text(
                         'MEALS FOR TODAY',
                         style: TextStyle(fontSize: 20),
                       ),
                     ),
                     Expanded(
+                      child: SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          children: [],
+                        ),
+                      ),
+                    ),
+                    Expanded(
                         child: Container(
                       color: Colors.red,
-                    )),
+                    ),
+                   ),
                   ],
                 ),
-              )),
+              ),
+           ),
         ],
       ),
     );
